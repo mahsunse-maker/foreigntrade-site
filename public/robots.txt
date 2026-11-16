@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foreigntrade.app/sitemap.xml

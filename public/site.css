@@ -1,0 +1,60 @@
+/* foreigntrade.app ortak site stili. Renkler uygulamanın design/tokens.json dosyasından. */
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;font-display:swap;src:url(/fonts/BricolageGrotesque_800ExtraBold.woff) format("woff")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:500;font-display:swap;src:url(/fonts/PlusJakartaSans_500Medium.woff) format("woff")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:600;font-display:swap;src:url(/fonts/PlusJakartaSans_600SemiBold.woff) format("woff")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:700;font-display:swap;src:url(/fonts/PlusJakartaSans_700Bold.woff) format("woff")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:800;font-display:swap;src:url(/fonts/PlusJakartaSans_800ExtraBold.woff) format("woff")}
+
+:root{
+  --bg:#FAF6F0; --surface:#FFFFFF; --sand:#F3EADF; --line:#EADFD2;
+  --ink:#231B15; --body:#4A3F37; --muted:#6E6259;
+  --espresso:#2A1F1A; --on-dark:#D8C8B8; --saffron:#F2B33D; --saffron-soft:#FCEFD2;
+  --imp:#2E4BC6; --imp-dark:#1F3596; --imp-soft:#E6EAFB;
+  --exp:#C2471F; --exp-dark:#8E3215; --exp-soft:#FBE6DC;
+  --bank:#1F7A5C; --bank-dark:#145641; --bank-soft:#DFF1E9;
+  --display:"Bricolage Grotesque","Plus Jakarta Sans",system-ui,sans-serif;
+  --text:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1A1411; --surface:#241C17; --sand:#2E241E; --line:#3A2E26;
+    --ink:#F4ECE3; --body:#DCCFC2; --muted:#B3A496;
+    --espresso:#0F0B09; --saffron-soft:#3A2E1A;
+    --imp:#8EA2F0; --imp-soft:#1E2547; --exp:#EE8D6B; --exp-soft:#3D2219; --bank:#6CCBA6; --bank-soft:#16332A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1A1411; --surface:#241C17; --sand:#2E241E; --line:#3A2E26;
+  --ink:#F4ECE3; --body:#DCCFC2; --muted:#B3A496;
+  --espresso:#0F0B09; --saffron-soft:#3A2E1A;
+  --imp:#8EA2F0; --imp-soft:#1E2547; --exp:#EE8D6B; --exp-soft:#3D2219; --bank:#6CCBA6; --bank-soft:#16332A;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-weight:500;font-size:16px;line-height:1.6}
+a{color:var(--exp)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--exp);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-wrap:wrap;min-height:44px}
+.brand img{width:38px;height:38px}
+.brand b{font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:-.03em}
+.brand b i{font-style:normal;color:var(--exp)}
+.brand span{font-size:13.5px;font-weight:600;color:var(--muted);border-left:1px solid var(--line);padding-left:10px}
+.site-head{padding-block:18px}
+.site-foot{padding-block:26px 40px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 20px}
+.site-foot a{color:var(--muted);font-weight:600}
+
+/* Metin sayfaları (gizlilik) */
+.doc{max-width:680px;padding-block:20px 10px}
+.doc h1{font-size:clamp(30px,5vw,40px);line-height:1.1;margin:0 0 6px}
+.doc .date{color:var(--muted);font-size:14px;margin:0 0 22px}
+.doc .tldr{background:var(--saffron-soft);border-radius:18px;padding:16px 20px;margin:0 0 26px;color:var(--ink)}
+.doc h2{font-size:21px;margin:28px 0 6px}
+.doc p,.doc li{color:var(--body)}
+.doc p{margin:0 0 10px}
+.doc ul{padding-left:20px;margin:0 0 10px}
+@media (max-width:420px){.brand span{border-left:0;padding-left:0;flex-basis:100%}}

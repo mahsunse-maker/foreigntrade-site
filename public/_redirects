@@ -1,9 +1,12 @@
-# Uygulama önizlemesi (tek sayfa uygulama): sayfa yolları index.html'e gider.
+# Eski önizleme adresi kalıcı olarak uygulamaya gider.
+/onizleme                  /uygulama/            301
+/onizleme/*                /uygulama/:splat      301
+# Web uygulaması (tek sayfa uygulama): sayfa yolları index.html'e gider.
 # Yalnızca uygulama rotaları yazılı; _expo/ ve assets/ altındaki dosyalar etkilenmez.
-/onizleme/welcome          /onizleme/  200
-/onizleme/glossary         /onizleme/  200
-/onizleme/badges           /onizleme/  200
-/onizleme/role             /onizleme/  200
-/onizleme/module/*         /onizleme/  200
-/onizleme/scenario/*       /onizleme/  200
-/onizleme/report/*         /onizleme/  200
+/uygulama/welcome          /uygulama/  200
+/uygulama/glossary         /uygulama/  200
+/uygulama/badges           /uygulama/  200
+/uygulama/role             /uygulama/  200
+/uygulama/module/*         /uygulama/  200
+/uygulama/scenario/*       /uygulama/  200
+/uygulama/report/*         /uygulama/  200
