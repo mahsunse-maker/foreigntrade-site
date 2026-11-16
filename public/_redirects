@@ -1,0 +1,9 @@
+# Uygulama önizlemesi (tek sayfa uygulama): sayfa yolları index.html'e gider.
+# Yalnızca uygulama rotaları yazılı; _expo/ ve assets/ altındaki dosyalar etkilenmez.
+/onizleme/welcome          /onizleme/index.html  200
+/onizleme/glossary         /onizleme/index.html  200
+/onizleme/badges           /onizleme/index.html  200
+/onizleme/role             /onizleme/index.html  200
+/onizleme/module/*         /onizleme/index.html  200
+/onizleme/scenario/*       /onizleme/index.html  200
+/onizleme/report/*         /onizleme/index.html  200
