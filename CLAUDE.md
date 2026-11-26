@@ -14,6 +14,6 @@ klasörünü yayınlar; **`main`'e push = otomatik yayın**. Derleme adımı yok
 - Alan adı foreigntrade.app, ad sunucuları Cloudflare'de. İleride ek alan adları 301 ile buraya bağlanır.
 - Sitede resmî kurumlarla bağ olmadığı yazılı kalmalı.
 
-Uygulama deposu: `mahsunse-maker/foreigntrade` (özel, `~/Desktop/foreigntrade`). Uyarı: Pages projesini asla o özel depoya bağlama.
+Uygulama deposu: `mahsunse-maker/foreigntrade` (özel, `~/Projeler/foreigntrade`). Uyarı: Pages projesini asla o özel depoya bağlama.
 
 Proje listesi: `~/.claude/CLAUDE.md`.
