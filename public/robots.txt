@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# Cloudflare'in e-posta gizleme bağlantısı; sayfa değil (Search Console 404, 26.11.2026).
+Disallow: /cdn-cgi/
 
 Sitemap: https://foreigntrade.app/sitemap.xml
